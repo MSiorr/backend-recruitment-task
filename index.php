@@ -11,7 +11,9 @@
 <body>
 
     <main>
-        <?php require_once './partials/main.php'; ?>
+        <?php
+        require_once './partials/main.php';
+        ?>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>

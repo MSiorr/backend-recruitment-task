@@ -4,7 +4,7 @@ $(function () {
     $('.removeBtn').on("click", function () {
         let id = $(this).data('id');
 
-        $.post('src/events/removeUser.php', { event: 'remove', id: id }, (res) => {
+        $.post('index.php', { event: 'remove', id: id }, (res) => {
             location.reload();
         })
 
@@ -16,7 +16,7 @@ $(function () {
         let data = $(this).serialize();
         data += "&event=add";
 
-        $.post('src/events/addUser.php', data, (res) => {
+        $.post('index.php', data, (res) => {
             console.log(res);
             location.reload();
         })

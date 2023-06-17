@@ -33,7 +33,6 @@ class Users
 
         array_push($users, $data);
 
-        // var_dump($users);
         file_put_contents($this->dataJSON, json_encode(array_values($users)));
     }
 }

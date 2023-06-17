@@ -17,8 +17,8 @@ $(function () {
         data += "&event=add";
 
         $.post('src/events/addUser.php', data, (res) => {
-            console.log("HELLO");
             console.log(res);
+            location.reload();
         })
     })
 })

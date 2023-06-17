@@ -81,7 +81,6 @@ function addUser(): bool
         ]
     ];
 
-    var_dump($data);
     $users->addUser($data);
 
     return true;

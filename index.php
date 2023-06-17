@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +10,12 @@
 
 <body>
 
-<main>
-    <?php require_once './partials/main.php'; ?>
-</main>
+    <main>
+        <?php require_once './partials/main.php'; ?>
+    </main>
 
-<script src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,19 @@
+{
+    "name": "msiorr/backend-recruitment-task",
+    "description": "Recruitment task",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Msiorr\\BackendRecruitmentTask\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MSiorr",
+            "email": "michaldakol@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    }
+}

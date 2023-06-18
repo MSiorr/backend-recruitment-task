@@ -19,6 +19,12 @@ $(function () {
         $.post('index.php', data, (res) => {
             console.log(res);
             location.reload();
+            // let data = JSON.parse(res);
+            // if (data.status) {
+            //     location.reload();
+            // } else {
+            //     alert(data.error);
+            // }
         })
     })
 })

@@ -1,72 +1,112 @@
-/*Add your custom styles here*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 .starting-title {
-    text-align: center;
+  text-align: center;
+  color: #FFF842;
 }
 
 body {
-    background-color: #121212;
-    color: white;
-
+  box-sizing: border-box;
+  background-color: #1F2739;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #A7A1AE;
 }
 
 table {
-    border-collapse: collapse;
-    margin: 0 auto;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+table th {
+  font-weight: bold;
+  font-size: 1em;
+  color: #287599;
+  background-color: #1F2739;
+}
+table td {
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+  -moz-box-shadow: 0 2px 2px -2px #0E1119;
+  box-shadow: 0 2px 2px -2px #0E1119;
+}
+table td:first-child {
+  color: #FB667A;
+  font-weight: 400;
+}
+table td,
+table th {
+  padding: 1%;
+  overflow: hidden;
+  text-align: center;
+}
+table tr {
+  transition: background-color 0.2s;
+}
+table tr:nth-child(odd) {
+  background-color: #323C50;
+}
+table tr:nth-child(even) {
+  background-color: #2C3446;
+}
+table tr:hover {
+  background-color: #464A52;
 }
 
-td,
-th {
-    border: 1px solid white;
-    text-align: center;
-    padding: 8px;
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  padding: 12px 24px;
+  transition: all 0.2s;
 }
 
-input[type=submit],
-button {
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
-    outline: none;
-    border-radius: 4px;
-    cursor: pointer;
+.removeBtn {
+  background-color: #a53125;
+  color: white;
 }
-
-input[type=submit]:hover,
-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.removeBtn:hover {
+  background-color: #c0392b;
 }
 
 .addUserDiv {
-    border: 1px solid white;
-    margin: 36px auto;
-    padding: 24px;
-    width: 30%;
-    max-width: 256px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 4px
+  width: 50%;
+  max-width: 496px;
+  margin: 24px auto 0 auto;
+  background-color: #2C3446;
+  padding: 12px 24px 24px 24px;
+  border-radius: 5px;
 }
-
 .addUserDiv form {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.addUserDiv form input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #A7A1AE;
+  padding: 10px;
+  color: #A7A1AE;
+  outline: none;
+}
+.addUserDiv form input:-webkit-autofill, .addUserDiv form input:-webkit-autofill:hover, .addUserDiv form input:-webkit-autofill:focus {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(232, 240, 254) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.addUserDiv form .submitBtn {
+  background-color: #13966c;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  margin-top: 24px;
+}
+.addUserDiv form .submitBtn:hover {
+  background-color: #1ab684;
 }
 
-.addUserDiv input {
-    margin: 2px 0;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    font-size: 20px;
-    border-radius: 4px;
-}
-
-.addUserDiv button {
-    margin-top: 16px;
-    font-size: 22px;
-}
+/*# sourceMappingURL=styles.css.map */

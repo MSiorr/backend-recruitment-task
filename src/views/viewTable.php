@@ -30,7 +30,7 @@ function displayIndex($users)
                 <td>{$user["phone"]}</td>
                 <td>{$user["company"]["name"]}</td>
                 <td>
-                    <button class='removeBtn' data-id='
+                    <button class='btn removeBtn' data-id='
                         {$user['id']}'
                     >REMOVE</button>
                 </td>
@@ -41,14 +41,25 @@ function displayIndex($users)
     </table>
 
     <div class="addUserDiv">
+
+        <h2 class='starting-title'>Add user</h2>
+
         <form id="addForm" method="POST">
-            <input type="text" name="name" id="iName" placeholder="Name" required>
-            <input type="text" name="username" id="iUsername" placeholder="Username" required>
-            <input type="email" name="email" id="iEmail" placeholder="Email" required>
-            <input type="text" name="address" id="iAddress" placeholder="Address" required>
-            <input type="text" name="phone" id="iPhone" placeholder="Phone" required>
-            <input type="text" name="company" id="iCompany" placeholder="Company" required>
-            <input type="submit" value="SUBMIT">
+            <input type="text" name="name" id="iName" placeholder="Name" required autocomplete="off">
+            <input type="text" name="username" id="iUsername" placeholder="Username" required autocomplete="off">
+            <input type="email" name="email" id="iEmail" placeholder="Email" required autocomplete="off">
+            <input type="text" name="address" id="iAddress" placeholder="Address" required autocomplete="off">
+            <input type="text" name="phone" id="iPhone" placeholder="Phone" required autocomplete="off">
+            <input type="text" name="company" id="iCompany" placeholder="Company" required autocomplete="off">
+
+            <!-- <label for="iName">Name: <input type="text" name="name" id="iName" placeholder="Name" required></label>
+            <label for="iName">Username: <input type="text" name="username" id="iUsername" placeholder="Username" required></label>
+            <label for="iName">Email: <input type="email" name="email" id="iEmail" placeholder="Email" required></label>
+            <label for="iName">Address: <input type="text" name="address" id="iAddress" placeholder="Address" required></label>
+            <label for="iName">Phone: <input type="text" name="phone" id="iPhone" placeholder="Phone" required></label>
+            <label for="iName">Company: <input type="text" name="company" id="iCompany" placeholder="Company" required></label> -->
+
+            <input class='btn submitBtn' type="submit" value="SUBMIT">
         </form>
     </div>
 
